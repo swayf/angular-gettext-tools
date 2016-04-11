@@ -8,16 +8,37 @@ Used to construct build tools for [`angular-gettext`](https://github.com/rubenv/
 
 Implementations:
 
-* [Grunt](https://github.com/rubenv/grunt-angular-gettext)
-* [Gulp](https://github.com/gabegorelick/gulp-angular-gettext)
+* [Grunt plugin](https://github.com/rubenv/grunt-angular-gettext)
+* [Gulp plugin](https://github.com/gabegorelick/gulp-angular-gettext)
+* [CLI utility](https://github.com/huston007/angular-gettext-cli)
+* [Webpack loader (compilation)](https://github.com/princed/angular-gettext-loader)
 
 Check the website for usage instructions: [http://angular-gettext.rocketeer.be/](http://angular-gettext.rocketeer.be/).
+
+## Options
+
+All options and defaults are displayed below: 
+
+```JSON
+{
+    "startDelim": "{{",
+    "endDelim": "}}",
+    "markerName": "gettext",
+    "markerNames": [],
+    "moduleName": "gettextCatalog",
+    "moduleMethodString": "getString",
+    "moduleMethodPlural": "getPlural",
+    "attribute": "translate",
+    "attributes": [],
+    "lineNumbers": true
+}
+```
 
 ## License 
 
     (The MIT License)
 
-    Copyright (C) 2013-2014 by Ruben Vermeersch <ruben@rocketeer.be>
+    Copyright (C) 2013-2015 by Ruben Vermeersch <ruben@rocketeer.be>
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
